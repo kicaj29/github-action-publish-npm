@@ -34,6 +34,8 @@
   ```
 
   Option 2: copy `.npmrc` to `dist/kicaj29/lib1`.
+
+  After publishing packages are available here: https://github.com/kicaj29/github-action-publish-npm/packages/783927
 # links
 https://angular.io/guide/creating-libraries   
 https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry   
