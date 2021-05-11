@@ -9,6 +9,7 @@
   @kicaj29:registry=https://npm.pkg.github.com/
   //npm.pkg.github.com/:_authToken=[TOKEN_VALUE]
   ```
+  If the token would be commit to the repo then github will remove it very soon, more [here](https://stackoverflow.com/questions/53579650/github-api-personal-access-token-removes-itself).
 
 * In `package.json` of the library add entry: ```"repository": "git://github.com/kicaj29/github-action-publish-npm.git"```.
   Thx to this package name does not have to match to repository name, more [here](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#publishing-multiple-packages-to-the-same-repository).
