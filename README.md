@@ -7,7 +7,7 @@
 
   ```
   @kicaj29:registry=https://npm.pkg.github.com/
-  //npm.pkg.github.com/:_authToken=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
+  //npm.pkg.github.com/:_authToken=[TOKEN_VALUE]
   ```
 
 * In `package.json` of the library add entry: ```"repository": "git://github.com/kicaj29/github-action-publish-npm.git"```.
