@@ -1,7 +1,7 @@
 {
   "name": "@kicaj29/lib1",
   "version": "0.0.3",
-  "repository": "git://github.com/kicaj29/github-action-publish-npm.git",
+  "repository":"https://github.com/kicaj29/github-action-publish-npm",
   "peerDependencies": {
     "@angular/common": "^11.1.2",
     "@angular/core": "^11.1.2"

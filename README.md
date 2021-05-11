@@ -11,7 +11,7 @@
   ```
   If the token would be commit to the repo then github will remove it very soon, more [here](https://stackoverflow.com/questions/53579650/github-api-personal-access-token-removes-itself).
 
-* In `package.json` of the library add entry: ```"repository": "git://github.com/kicaj29/github-action-publish-npm.git"```.
+* In `package.json` of the library add entry: ```"repository": "https://github.com/kicaj29/github-action-publish-npm"```.
   Thx to this package name does not have to match to repository name, more [here](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#publishing-multiple-packages-to-the-same-repository).
 
 * Next run
@@ -24,5 +24,6 @@
 
 # links
 https://angular.io/guide/creating-libraries   
-https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry
+https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry   
+https://medium.com/@windix/host-and-publish-npm-package-on-github-bb419a2acfd3   
 
