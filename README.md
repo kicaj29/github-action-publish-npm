@@ -16,7 +16,14 @@
 
 * Next run
 
-  >NOTE: I had very weird issue with of failing authentication. If it would happen again try the following 2 options.
+  ```
+  cd my-workspace/
+  ng build @kicaj29/lib1 --prod
+  cd dist/kicaj29/lib1
+  npm publish
+  ```
+
+  >NOTE: I had very weird issue with of failing authentication. If it would happen again try the following 2 options before running `npm publish`.
 
   Option 1: run npm login.   
   ```
@@ -27,14 +34,6 @@
   ```
 
   Option 2: copy `.npmrc` to `dist/kicaj29/lib1`.
-
-  ```
-  cd my-workspace/
-  ng build @kicaj29/lib1 --prod
-  cd dist/kicaj29/lib1
-  npm publish
-  ```
-
 # links
 https://angular.io/guide/creating-libraries   
 https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry   
