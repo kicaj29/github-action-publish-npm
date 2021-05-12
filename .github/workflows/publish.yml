@@ -19,7 +19,7 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: pwd
     - run: ls
-    - run: cd my-workspace/        
+    - run: cd my-workspace       
     - run: ls
     - run: pwd
     - run: npm install
