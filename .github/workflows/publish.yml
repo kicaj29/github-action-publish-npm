@@ -5,17 +5,17 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Get the sources
-      - uses: actions/checkout@v2
-      - name: Build and publish
-        uses: actions/setup-node@v2
-        with:
-          node-version: '12.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@kicaj29'        
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: cd my-workspace/
-      - run: ng build @kicaj29/lib1 --prod
-      - run: cd dist/kicaj29/lib1
-      - run: npm publish     
+    - name: Get the sources
+    - uses: actions/checkout@v2
+    - name: Build and publish
+      uses: actions/setup-node@v2
+      with:
+        node-version: '12.x'
+        registry-url: 'https://npm.pkg.github.com'
+        scope: '@kicaj29'        
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: cd my-workspace/
+    - run: ng build @kicaj29/lib1 --prod
+    - run: cd dist/kicaj29/lib1
+    - run: npm publish     
