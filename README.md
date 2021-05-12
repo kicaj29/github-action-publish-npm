@@ -42,7 +42,7 @@
 Just update version in package.json and add the tag with the same version. Next the workflow will publish the package.
 
 ```
-git tag -a v1.0.1 -m "This is version 1.0.1"
+git tag -a v0.0.17 -m "This is version 0.0.17"
 git tag
 git push --tags
 ```
