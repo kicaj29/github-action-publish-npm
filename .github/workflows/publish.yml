@@ -17,12 +17,5 @@ jobs:
         scope: '@kicaj29'        
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - run: pwd
-    - run: ls
-    - run: cd my-workspace       
-    - run: ls
-    - run: pwd
-    - run: npm install
-    - run: npm run build @kicaj29/lib1 --prod
-    - run: cd dist/kicaj29/lib1
-    - run: npm publish     
+    - run: |
+        cd my-workspace && npm install && npm run build @kicaj29/lib1 --prod && cd dist/kicaj29/lib1 && npm publish   
