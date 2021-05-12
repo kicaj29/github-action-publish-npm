@@ -36,6 +36,17 @@
   Option 2: copy `.npmrc` to `dist/kicaj29/lib1`.
 
   After publishing packages are available here: https://github.com/kicaj29/github-action-publish-npm/packages/783927
+
+# Publish from the workflow
+
+Just update version in package.json and add the tag with the same version. Next the workflow will publish the package.
+
+```
+git tag -a v1.0.1 -m "This is version 1.0.1"
+git tag
+git push --tags
+```
+
 # links
 https://angular.io/guide/creating-libraries   
 https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry   

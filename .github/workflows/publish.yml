@@ -16,6 +16,6 @@ jobs:
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: cd my-workspace/
-    - run: ng build @kicaj29/lib1 --prod
+    - run: npm run build @kicaj29/lib1 --prod
     - run: cd dist/kicaj29/lib1
     - run: npm publish     
